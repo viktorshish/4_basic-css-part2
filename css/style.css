@@ -46,7 +46,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   background-color: #3f2aff;
-
 }
 
 .link-home:not(:last-child) {
@@ -54,10 +53,13 @@ body {
 }
 
 .link-download {
-  padding-left: 25px;
+  padding-left: 30px;
   font-weight: 700;
   font-size: 18px;
   color: #3f2aff;
+  background-image: url("../img/download.png");
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -66,9 +68,14 @@ body {
   width: 1170px;
 }
 
-.article-h1 {
+.article-main-title {
   margin: 0;
   margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #666;
+
 }
 
 .article-paragraph {
