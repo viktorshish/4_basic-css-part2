@@ -60,6 +60,7 @@ body {
   background-image: url("../img/download.png");
   background-position: left center;
   background-repeat: no-repeat;
+  background-size: contain
 }
 
 .container {
@@ -74,14 +75,17 @@ body {
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
-  color: #666;
-
+  color: #333;
 }
 
-.article-paragraph {
+.article-text {
   margin: 0;
   margin-bottom: 40px;
-  width: 872px
+  width: 872px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333;
 }
 
 .article-gray {
@@ -89,37 +93,74 @@ body {
   border-radius: 20px;
   padding: 30px;
   background-color: #f3f3f3;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain
+}
+
+.article-gray-contents {
+  background-image: url(../img/decorate-1.png);
+}
+
+.article-gray-summary {
+  background-image: url(../img/decorate-2.png);
 }
 
 .article-gray:not(:last-child) {
   margin-bottom: 40px;
 }
 
-.article-h2 {
-  margin: 0
-}
-
-.article-h2:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.article-gray .article_paragraph {
+.article-gray .article-text {
   width: 692px;
   margin-bottom: 10px;
 }
 
-.article-h3 {
+.article-blue {
+  border-radius: 20px;
+  padding: 50px 95px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  background-color: #3f2aff;
+}
+
+.article-second-title {
   margin: 0;
   margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 46px;
+  color: #333;
+}
+
+.article-third-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  color: #333;
 }
 
 .article-list {
   margin: 0;
-  padding-left: 15px;
+  padding: 15px 0 15px 15px
 }
 
+ul li::marker {
+  color: #3f2aff;
+}
+
+.article-element-list {
+  font-size: 20px;
+  color: #3f2aff;
+  }
+
 .article-element-list:not(:last-child) {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.article-element-list a {
+  border-bottom: 1px solid #3f2aff;
 }
 
 .article-notfigure {
@@ -127,8 +168,18 @@ body {
 }
 
 .article-figure {
-  margin: 0;
   display: inline-block;
+  margin: 0;
   width: 872px;
   margin-bottom: 40px;
+  font-size: 0;
+}
+
+.article-figcaption {
+  border: 1px solid #b6b6b6;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
 }
